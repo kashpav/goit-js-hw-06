@@ -7,5 +7,9 @@ nameInput.addEventListener("input", onInputChange);
 
 function onInputChange(e) {
   // console.log(e.currentTarget.value);
-  nameToInsert.textContent = e.currentTarget.value;
+
+  // nameToInsert.textContent = e.currentTarget.value;
+  nameToInsert.textContent = e.currentTarget.value
+    ? e.currentTarget.value
+    : "Anonymus";
 }
